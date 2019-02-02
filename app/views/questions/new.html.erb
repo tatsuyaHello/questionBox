@@ -1,0 +1,10 @@
+<h1>質問どうぞ</h1>
+<%= form_for(@question) do |f| %>
+  <%= f.text_area :question, :size=>"70x10" %>
+  <br>
+  <%= f.submit "おくるよ"%>
+<% end %>
+
+<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
