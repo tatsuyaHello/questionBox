@@ -1,10 +1,17 @@
 <h1>質問どうぞ</h1>
 <%= form_for(@question) do |f| %>
-  <%= f.text_area :question, :size=>"70x10" %>
-  <br>
-  <%= f.submit "おくるよ"%>
+  <%= f.text_area :question, :size=>"80x8", class:"textlines" %>
+  <%= f.submit "おくるよ", class:"submit" %>
 <% end %>
 
 <% if flash[:notice] %>
-  <p><%= flash[:notice] %></p>
+  <p class="flash"><%= flash[:notice] %></p>
+<% elsif @question.errors.any? %>
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @question.errors.full_messages.each do |message| %>
+        <p><%= message %></p>
+      <% end %>
+    </ul>
+  </div>
 <% end %>
