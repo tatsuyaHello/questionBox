@@ -6,7 +6,7 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     if @question.save
-      flash[:notice] = '質問をおくったよ'
+      flash[:notice] = '質問をおくったよ!!!!!!!!!!!!!'
       redirect_to new_question_path
     else
       render 'new'
