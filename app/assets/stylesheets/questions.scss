@@ -22,7 +22,7 @@ body{
     }
     .textlines{
       resize: none;
-      width: 700px;
+      width: 400px;
       height: 100px;
       display: block;
       margin-right:auto; margin-left:auto;
@@ -35,7 +35,7 @@ body{
         font-size: 12px;
       }
     }
-    @media(max-width: 670px){
+    @media(max-width: 800px){
       .textlines{
         width: 200px;
         height: 60px;
@@ -57,7 +57,7 @@ body{
 
 header{
   @media(min-height: 500px){
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   height: auto;
   width: auto;
