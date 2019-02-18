@@ -6,6 +6,8 @@ body{
   @media(max-width: 250px){
     width: 250px;
   }
+  padding: 0;
+  margin: 0;
   background: WHITE;
   background-repeat: no-repeat;
   font-family: 'HanziPen TC',sans-serif;
@@ -54,6 +56,9 @@ body{
 
 
 header{
+  @media(min-height: 500px){
+    margin-bottom: 100px;
+  }
   height: auto;
   width: auto;
   color: BLACK;
@@ -73,7 +78,10 @@ header{
 }
 
 footer{
-  //position: fixed;
+  @media(min-height: 600px){
+    position: fixed;
+  }
+  //position: absolute; /*　変更*/
   bottom: 0;
   @media(max-width: 670px){
     font-size: 10px;
