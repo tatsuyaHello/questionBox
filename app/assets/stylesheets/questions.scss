@@ -11,13 +11,16 @@ body{
     padding-top: 40px;
     padding-bottom: 20px;
     .textlines{
+      resize: none;
+      width: 700px;
+      height: 200px;
       display: block;
       margin-right:auto; margin-left:auto;
       border: 2px solid #808080;
       border-radius: 9em;
       padding: 3em;
       background-color: snow;
-      font-size: 1em;
+      font-size: 20px
     }
     .submit{
       margin-right:auto; margin-left:auto;
@@ -63,4 +66,14 @@ li{
 
 .fa{
   font-size: 40px !important;
+}
+
+@media(max-width: 1000px){
+}
+
+@media(max-width: 670px){
+  .textlines{
+    width: 100px;
+    height: 50px;
+  }
 }
